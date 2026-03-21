@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* PAGE */
+
+.info{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+
+/* STOCK BACKGROUND */
+
+background:
+linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.85)),
+url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+}
+
+
+/* CONTENT CARD */
+
+.info{
+
+flex-direction:column;
+padding:40px;
+}
+
+
+/* TITLE */
+
+.info h1{
+
+font-size:2.5rem;
+margin-bottom:30px;
+
+background:linear-gradient(90deg,#38bdf8,#60a5fa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+letter-spacing:2px;
+
+}
+
+
+/* STOCK DATA */
+
+.info p{
+
+font-size:1.4rem;
+margin:10px 0;
+color:#cbd5f5;
+
+}
+
+.info span{
+
+margin-left:15px;
+font-weight:600;
+color:white;
+
+}
+
+
+/* PRICE STYLE */
+
+.info p:nth-child(3) span{
+
+font-size:2rem;
+
+}
+
+
+/* BUY SIGNAL */
+
+.buy{
+
+display:inline-block;
+padding:8px 25px;
+border-radius:40px;
+
+background:linear-gradient(135deg,#059669,#10b981);
+
+font-weight:600;
+letter-spacing:1px;
+
+color:white;
+
+box-shadow:0 0 20px rgba(16,185,129,0.7);
+
+}
+
+
+/* SELL SIGNAL */
+
+.sell{
+
+display:inline-block;
+padding:8px 25px;
+border-radius:40px;
+
+background:linear-gradient(135deg,#b91c1c,#ef4444);
+
+font-weight:600;
+letter-spacing:1px;
+
+color:white;
+
+box-shadow:0 0 20px rgba(239,68,68,0.7);
+
+}
+
+
+/* QUOTE SECTION */
+
+.quote_box{
+
+margin:40px 0;
+
+}
+
+.quote{
+
+font-size:1.2rem;
+font-style:italic;
+color:#e2e8f0;
+animation:fade 3s infinite;
+
+}
+
+@keyframes fade{
+
+0%{opacity:0}
+
+50%{opacity:1}
+
+100%{opacity:0}
+
+}
+
+
+/* BUTTONS */
+
+.btn{
+
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+
+}
+
+
+button{
+
+padding:12px 30px;
+
+border:none;
+border-radius:40px;
+
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+color:white;
+font-weight:500;
+
+cursor:pointer;
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 25px rgba(37,99,235,0.6);
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.info h1{
+font-size:2rem;
+}
+
+.info p{
+font-size:1.2rem;
+}
+
+.btn{
+flex-direction:column;
+}
+
+button{
+width:100%;
+}
+
+}

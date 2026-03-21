@@ -1,0 +1,155 @@
+/* GLOBAL */
+
+body{
+    background:#0b0f19;
+    font-family: "Segoe UI", sans-serif;
+    color:white;
+}
+
+
+/* MAIN CONTAINER */
+
+.fetch{
+    width:900px;
+    margin:auto;
+    margin-top:60px;
+    background:#121826;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.6);
+    text-align:center;
+}
+
+
+/* INPUT AREA */
+
+.fetch label{
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+
+.fetch input{
+    margin-left:15px;
+    padding:10px 15px;
+    width:250px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    background:#1c2333;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+
+.fetch input:focus{
+    box-shadow:0 0 8px #00f2ff;
+}
+
+
+/* BUTTON */
+
+.fetch button{
+    margin-left:15px;
+    padding:10px 25px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(135deg,#00f2ff,#0072ff);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+.fetch button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(0,242,255,0.5);
+}
+
+
+/* HISTORY BOX */
+
+.previous_data{
+    margin-top:40px;
+    background:#0f1424;
+    padding:25px;
+    border-radius:10px;
+}
+
+
+/* TITLE */
+
+.previous_data h3{
+    margin-bottom:20px;
+    color:#00f2ff;
+    letter-spacing:1px;
+}
+
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+/* HEADER */
+
+thead{
+    background:#182034;
+}
+
+th{
+    padding:14px;
+    font-weight:600;
+    color:#00f2ff;
+    text-transform:uppercase;
+    font-size:14px;
+}
+
+
+/* BODY */
+
+td{
+    padding:12px;
+    border-bottom:1px solid #1f2a40;
+    font-size:15px;
+}
+
+
+/* HOVER EFFECT */
+
+tbody tr{
+    transition:0.2s;
+}
+
+tbody tr:hover{
+    background:#1b243a;
+    cursor:pointer;
+}
+
+
+/* BUY / SELL COLORS */
+
+td:nth-child(3){
+    font-weight:600;
+}
+
+td:nth-child(3):contains("BUY"){
+    color:#00ff88;
+}
+
+td:nth-child(3):contains("SELL"){
+    color:#ff4d4d;
+}
+
+
+/* EMPTY TEXT */
+
+.previous_data p{
+    color:#7a86a1;
+}
