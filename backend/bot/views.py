@@ -117,4 +117,4 @@ def chatbotdata(request):
 
         return JsonResponse({"reply": reply})
 
-    return JsonResponse({"error": "Method not allowed"})
+    return JsonResponse({"error": "Method not allowed"})    
