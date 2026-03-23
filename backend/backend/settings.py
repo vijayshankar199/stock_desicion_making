@@ -91,6 +91,9 @@ DATABASES = {
         'USER':"marketpulse_setsseedas",  
         'HOST':'k1j1s8.h.filess.io',
         'PORT':'3307',
+        'OPTIONS': {
+            'connect_timeout': 10,   # 🔥 prevents infinite loading
+        }
     }
 }
 
