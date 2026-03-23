@@ -87,16 +87,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'marketpulse_setsseedas',
-        'PASSWORD':'Vijay@123',
-        'USER':"marketpulse_setsseedas",  
-        'HOST':'k1j1s8.h.filess.io',
-        'PORT':'3307',
+        'USER': 'marketpulse_setsseedas',
+        'PASSWORD': 'Vijay@123',
+        'HOST': 'k1j1s8.h.filess.io',
+        'PORT': '3307',
+        'CONN_MAX_AGE': 60,
         'OPTIONS': {
-            'connect_timeout': 10,   # 🔥 prevents infinite loading
+            'connect_timeout': 10,
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         }
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
